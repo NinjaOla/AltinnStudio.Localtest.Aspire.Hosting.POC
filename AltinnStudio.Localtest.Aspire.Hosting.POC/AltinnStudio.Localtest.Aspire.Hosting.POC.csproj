@@ -9,9 +9,11 @@
 	  <!-- NuGet package metadata -->
 	  <PackageId>Altinn.Studio.Hosting</PackageId>
 	  <Version>0.0.1</Version>
-	  <Description>Aspire hosting extensions for Altinn Studio LocalTest.</Description>
-	  <PackageTags>aspire;altinn;localtest</PackageTags>
+	  <Description>POC Aspire hosting extension for Altinn Studio LocalTest.</Description>
+	  <Authors>NinjaOla</Authors>
+	  <PackageTags>aspire;altinn;altinnstudio;localtest</PackageTags>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/NinjaOla/AltinnStudio.Localtest.Aspire.Hosting.POC.git</RepositoryUrl>
   </PropertyGroup>
 
 	<ItemGroup>
