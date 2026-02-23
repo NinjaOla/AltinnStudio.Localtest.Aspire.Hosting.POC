@@ -2,6 +2,6 @@
   <Folder Name="/Solution Items/">
     <File Path="README.md" />
   </Folder>
-  <Project Path="AltinnStudio.Localtest.Aspire.Hosting.POC/NinjaOla.ASLocaltest.Aspire.Hosting.POC.csproj" Id="713d95c5-5242-49c4-b4d9-be095598a4d4" />
   <Project Path="ExampleHost/ExampleHost.csproj" Id="d6fde4e6-11a3-4b29-be9f-597225ec9f76" />
+  <Project Path="NinjaOla.ASLocaltest.Aspire.Hosting.POC/NinjaOla.ASLocaltest.Aspire.Hosting.POC.csproj" />
 </Solution>

@@ -1,4 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.1.1">
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.1.1">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AltinnStudio.Localtest.Aspire.Hosting.POC\NinjaOla.ASLocaltest.Aspire.Hosting.POC.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\NinjaOla.ASLocaltest.Aspire.Hosting.POC\NinjaOla.ASLocaltest.Aspire.Hosting.POC.csproj" IsAspireProjectResource="false" />
   </ItemGroup>
 
 </Project>
