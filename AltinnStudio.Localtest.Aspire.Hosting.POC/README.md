@@ -13,8 +13,10 @@ https://github.com/Altinn
 ##Requirements
 Aspire 13?
 Dotnet 10
-
+Right now make sure to have removed your already running localtest container.
 ```csharp
+using NinjaOla.ASLocaltest.Aspire.Hosting.POC;
+
 var altinn = builder.AddAltinnStudio();
 
 var app = builder.AddProject<Projects.App>("altinnAppName", configure: static project =>

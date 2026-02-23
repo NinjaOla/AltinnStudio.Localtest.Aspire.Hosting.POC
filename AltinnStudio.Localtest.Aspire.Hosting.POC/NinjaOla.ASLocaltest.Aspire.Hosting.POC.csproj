@@ -7,7 +7,7 @@
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 	  <!-- NuGet package metadata -->
-	  <PackageId>Altinn.Studio.Hosting</PackageId>
+	  <PackageId>NinjaOla.ASLocaltest.Aspire.Hosting.POC</PackageId>
 	  <Version>0.0.1</Version>
 	  <Description>POC Aspire hosting extension for Altinn Studio LocalTest.</Description>
 	  <Authors>NinjaOla</Authors>

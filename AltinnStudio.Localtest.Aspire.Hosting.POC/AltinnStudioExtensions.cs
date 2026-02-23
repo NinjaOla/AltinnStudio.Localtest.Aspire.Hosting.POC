@@ -1,7 +1,7 @@
 ﻿using Aspire.Hosting;
 using Aspire.Hosting.ApplicationModel;
 
-namespace AltinnStudio.Localtest.Aspire.Hosting.POC;
+namespace NinjaOla.ASLocaltest.Aspire.Hosting.POC;
 
 /// <summary>
 /// Extensions for adding Altinn Studio resources to an Aspire distributed application.
@@ -37,7 +37,7 @@ public static class AltinnStudioExtensions
             .AddContainer("localtest", "altinn/altinn-studio/runtime-localtest", options.Tag)
             .WithImageRegistry(options.ImageRegistry)
             .WithLifetime(options.Lifetime)
-            .WithHttpEndpoint(port: outgoingPort, targetPort: 5101, name: "http", isProxied: false)
+            .WithHttpEndpoint(port: outgoingPort, targetPort: 5101, name: "http")
             .WithEndpoint("internal", e =>
             {
                 e.Port = 5101;
@@ -60,26 +60,26 @@ public static class AltinnStudioExtensions
 public sealed record AltinnStudioOptions
 {
     /// <summary>Image tag for the LocalTest container.</summary>
-    public string Tag { get; init; } = "c562f53";
+    public string Tag { get; set; } = "c562f53";
 
     /// <summary>
     /// Host port exposed for the LocalTest container.
     /// When <see langword="null"/>, auto-detected from <c>ALTINN3LOCAL_PORT</c> configuration
     /// or the container runtime default.
     /// </summary>
-    public int? OutgoingPort { get; init; }
+    public int? OutgoingPort { get; set; }
 
     /// <summary>Default host port used when no explicit port is configured (Docker runtime).</summary>
-    public int DefaultPort { get; init; } = 80;
+    public int DefaultPort { get; set; } = 80;
 
     /// <summary>Container lifecycle. Defaults to <see cref="ContainerLifetime.Persistent"/>.</summary>
-    public ContainerLifetime Lifetime { get; init; } = ContainerLifetime.Persistent;
+    public ContainerLifetime Lifetime { get; set; } = ContainerLifetime.Persistent;
 
     /// <summary>Container image registry.</summary>
-    public string ImageRegistry { get; init; } = "ghcr.io";
+    public string ImageRegistry { get; set; } = "ghcr.io";
 
     /// <summary>Test domain used for URL and environment configuration.</summary>
-    public string TestDomain { get; init; } = "local.altinn.cloud";
+    public string TestDomain { get; set; } = "local.altinn.cloud";
 }
 
 /// <summary>
