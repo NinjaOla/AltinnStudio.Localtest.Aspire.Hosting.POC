@@ -1,22 +1,19 @@
 # AltinnStudio.Localtest.Aspire.Hosting.POC
 Altinnstudio localtest aspire hosting extension
+
 We have been using aspire for our altinn app for quite some time, just for logs etc. 
-Its not a standard app, we have our own seperate frontend, but its delivered to the client the same way as original altinn apps in prod. In dev its running a vite dev server.
+
+Its not a standard app, we have our own seperate frontend, but its delivered to the client the same way as an original altinn app in prod. In dev its running a vite dev server.
+
 Both the app and frontend is started through aspire. However a painpoint was to always remember (specially for new devs) to clone and start the Localtest environment.
 
 
 Since altinn studio released the localtest runtime as docker image, this is a proof of concept of using the altinn studio localtest as an aspire resource for a better dev experience.
+
 https://github.com/Altinn/altinn-studio/pkgs/container/altinn-studio%2Fruntime-localtest
 https://github.com/Altinn
 
-
-##Requirements
-Aspire 13?
-Dotnet 10
-Right now make sure to have removed your already running localtest container.
 ```csharp
-using NinjaOla.ASLocaltest.Aspire.Hosting.POC;
-
 var altinn = builder.AddAltinnStudio();
 
 var app = builder.AddProject<Projects.App>("altinnAppName", configure: static project =>
@@ -32,6 +29,16 @@ var app = builder.AddProject<Projects.App>("altinnAppName", configure: static pr
          r.DisplayText = "LocalAltinnCloud";
          r.Url = "http://local.altinn.cloud/";
      }));
+```
+
+Can also change some ports and image tag on 
+
+```csharp
+var altinn = builder.AddAltinnStudio(conf=>{
+conf.Tag = "Tag"
+});
+
+
 ```
 
 Later versions will be to setup telemtry for the img, and proper references on the app.

@@ -11,6 +11,7 @@
 	  <Version>0.0.1</Version>
 	  <Description>POC Aspire hosting extension for Altinn Studio LocalTest.</Description>
 	  <Authors>NinjaOla</Authors>
+	  <Company>NinjaOla</Company>
 	  <PackageTags>aspire;altinn;altinnstudio;localtest</PackageTags>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <RepositoryUrl>https://github.com/NinjaOla/AltinnStudio.Localtest.Aspire.Hosting.POC.git</RepositoryUrl>
