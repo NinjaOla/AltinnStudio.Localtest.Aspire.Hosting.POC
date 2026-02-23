@@ -16,7 +16,7 @@ public static class AltinnStudioExtensions
     /// <param name="configure">Optional callback to override <see cref="AltinnStudioOptions"/> defaults.</param>
     /// <returns>An <see cref="AltinnStudioResources"/> containing references to the added resources.</returns>
     public static AltinnStudioResources AddAltinnStudio(
-        this IDistributedApplicationBuilder builder
+        this IDistributedApplicationBuilder builder,
         Action<AltinnStudioOptions>? configure = null)
     {
         var options = new AltinnStudioOptions();
