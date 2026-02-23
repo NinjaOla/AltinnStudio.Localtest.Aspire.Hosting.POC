@@ -31,4 +31,14 @@ var app = builder.AddProject<Projects.App>("altinnAppName", configure: static pr
      }));
 ```
 
+Can also change some ports and image tag on 
+
+```csharp
+var altinn = builder.AddAltinnStudio(conf=>{
+conf.Tag = "Tag"
+});
+
+
+```
+
 Later versions will be to setup telemtry for the img, and proper references on the app.
