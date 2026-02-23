@@ -9,6 +9,11 @@ Since altinn studio released the localtest runtime as docker image, this is a pr
 https://github.com/Altinn/altinn-studio/pkgs/container/altinn-studio%2Fruntime-localtest
 https://github.com/Altinn
 
+
+##Requirements
+Aspire 13?
+Dotnet 10
+
 ```csharp
 var altinn = builder.AddAltinnStudio();
 

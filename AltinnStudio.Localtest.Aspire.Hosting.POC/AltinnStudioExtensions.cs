@@ -12,7 +12,6 @@ public static class AltinnStudioExtensions
     /// Adds Altinn Studio resources to the distributed application, optionally including a LocalTest container.
     /// </summary>
     /// <param name="builder">The distributed application builder.</param>
-    /// <param name="localTest">When <see langword="true"/>, adds the LocalTest container resource.</param>
     /// <param name="configure">Optional callback to override <see cref="AltinnStudioOptions"/> defaults.</param>
     /// <returns>An <see cref="AltinnStudioResources"/> containing references to the added resources.</returns>
     public static AltinnStudioResources AddAltinnStudio(
